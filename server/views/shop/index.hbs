@@ -1,0 +1,45 @@
+{{# each products }}
+  <div class="row">
+
+      {{# each this }}
+      <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img class="img-responsive" src={{this.imagePath}} alt="...">
+      <div class="caption">
+        <h3>{{ this.title }}</h3>
+        <p class="description">{{ this.description}}</p>
+        <p>
+          <div class="clearfix">
+            <div class="price pull-left" >{{ this.price}}</div>
+            <a href="#" class="btn btn-success pull-right" role="button">Add to Shopping Cart</a> 
+            <!--<a href="#" class="btn btn-default" role="button">Button</a>-->
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+      {{/each}}
+ 
+
+  </div>
+{{/each}}
+
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <br/>
+  <div class="panel-heading">Shopping Cart | Powered by EyeMotion </div>
+  <div class="panel-body">
+    <p>Comment</p>
+  </div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item"> © 2019 All rights reserved </li>
+    <li class="list-group-item"><a href="#termsofservices">Terms of Service</a></li>
+    <li class="list-group-item"><a href="#privacypolicy">Privacy Policy</a></li>
+    <li class="list-group-item"><a href="#support">Support</a></li>
+  </ul>
+</div>
+
